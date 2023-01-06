@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0-windows10.0.22621.0</TargetFramework>
+    <RootNamespace>Onboard_FUSPIC_FlightComputer</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <BaseOutputPath>C:\fuspic</BaseOutputPath>
+    <Configurations>Debug;Release;build</Configurations>
+    <Platforms>AnyCPU;x64</Platforms>
+    <GenerateDocumentationFile>False</GenerateDocumentationFile>
+    <AssemblyName>Onboard_FUSPIC_FlightComputer</AssemblyName>
+    <StartupObject>Onboard_FUSPIC_FlightComputer.Program</StartupObject>
+    <SupportedOSPlatformVersion>10.0.22621.0</SupportedOSPlatformVersion>
+    <BaseIntermediateOutputPath>obj/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Onboard_FUSPIC_FlightComputer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSUIPCClientDLL" Version="3.2.25" />
+  </ItemGroup>
+
+</Project>
